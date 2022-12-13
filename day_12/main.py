@@ -76,7 +76,6 @@ def part2(lines: List[str]):
         try:
             total_cost = find_path(graph, start_pos, end_pos).total_cost
             total_costs.append(total_cost)
-            print(start_pos, total_cost)
         except:
             pass
 
