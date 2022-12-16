@@ -23,6 +23,7 @@ def part1(lines: List[str], y: int):
         sensor = Sensor(sensor_coords[0], sensor_coords[1], manhattan_distance)
         sensors.add(sensor)
 
+    # Getting the y ranges for each sensor
     y_ranges = []
     for sensor in sensors:
         if abs(y - sensor.y) > sensor.dist: continue
